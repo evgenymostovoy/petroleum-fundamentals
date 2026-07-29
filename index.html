@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petroleum Fundamentals</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #faf9f6;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #b45309;
+      --card: #ffffff;
+      --border: #e5e1d8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181d;
+        --text: #e8e6e1;
+        --muted: #9ca3af;
+        --accent: #f59e0b;
+        --card: #1f2229;
+        --border: #33373f;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    main { max-width: 42rem; margin: 0 auto; }
+    header { margin-bottom: 2.5rem; }
+    h1 {
+      font-size: 2rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle { color: var(--muted); font-size: 1rem; }
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: normal;
+      margin: 2rem 0 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    ul.doc-list { list-style: none; }
+    ul.doc-list li {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.6rem;
+    }
+    ul.doc-list a {
+      display: block;
+      padding: 0.8rem 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+    ul.doc-list a:hover { text-decoration: underline; }
+    ul.doc-list .date {
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: block;
+    }
+    .empty { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+    footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Petroleum Fundamentals</h1>
+      <p class="subtitle">A personal learning journal — lessons and references, newest first.</p>
+    </header>
+
+    <section>
+      <h2>Lessons</h2>
+      <ul class="doc-list" id="lessons">
+        <!-- Newest lessons go at the TOP of this list.
+             Template:
+             <li><a href="lessons/FILENAME.html">Lesson title<span class="date">Month D, YYYY</span></a></li>
+        -->
+      </ul>
+      <p class="empty" id="lessons-empty">No lessons yet — they'll appear here as you learn.</p>
+    </section>
+
+    <section>
+      <h2>Reference Documents</h2>
+      <ul class="doc-list" id="reference">
+        <!-- Newest reference docs go at the TOP of this list.
+             Template:
+             <li><a href="reference/FILENAME.html">Reference title<span class="date">Month D, YYYY</span></a></li>
+        -->
+      </ul>
+      <p class="empty" id="reference-empty">No reference documents yet.</p>
+    </section>
+
+    <footer>
+      Petroleum engineering fundamentals · built with the <em>teach</em> skill
+    </footer>
+  </main>
+</body>
+</html>
