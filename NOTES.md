@@ -58,12 +58,21 @@ quantitative level (LR-0003).
 
 ## Glossary policy
 
-GLOSSARY.md (workspace root) is canonical terminology. Seeded with
-practice-known D&C vocabulary only. Promote lesson-taught theory terms
-after correct spaced retrieval; adhere to glossary terms in every lesson.
+GLOSSARY.md (workspace root) is canonical terminology; adhere to its
+terms in every lesson. Seeded 2026-07-30 with practice-known D&C
+vocabulary (LR-0001). Promote lesson-taught theory terms only after
+correct spaced retrieval — first candidates (effective stress, stress
+path, undercompaction, hoop stress, Mohr–Coulomb, UCS) are pending the
+Lesson 0002 quiz round (LR-0002).
 
 ## Session log
 
+- 2026-07-30 (4) · Alignment audit applied: RESOURCES.md retitled and
+  now serves the full mission — economics/decision-analysis subsection
+  added (Newendorp & Schuyler verified; Mian pending link), commercial
+  proving grounds added to Wisdom (workplace economists, SPEE), field
+  data moved next to cross-discipline reference, economics gap surfaced.
+  Glossary promotion policy deduplicated (NOTES.md canonical).
 - 2026-07-30 (3) · Skill-compliance audit applied: GLOSSARY.md created
   (practice-known terms seeded); per-claim citations added to both
   lessons; quiz option word counts fixed and answer indices varied in

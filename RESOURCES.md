@@ -1,4 +1,4 @@
-# Petroleum Engineering Fundamentals Resources
+# Petroleum Engineering Resources — Fundamentals to Field Decisions
 
 ## Knowledge
 
@@ -11,6 +11,17 @@
 - [SLB Energy Glossary](https://glossary.slb.com/)
   The industry's de-facto glossary. Use for: terminology and glossary
   definitions in lessons.
+
+### Field data (grounding examples in real wells)
+
+- [Sodir FactPages — Norwegian Offshore Directorate](https://factpages.sodir.no/)
+  Open data on every NCS wellbore (~10,000), field, discovery, and
+  licence; daily-synced, no registration. Use for: real NCS depths,
+  pressures, and field facts in lesson examples.
+- [ANP technical data access (Brazil)](https://www.gov.br/anp/pt-br/assuntos/exploracao-e-producao-de-oleo-e-gas/dados-tecnicos/acesso-aos-dados-tecnicos)
+  Brazil's regulator's portal for E&P technical data (well logs, seismic).
+  Use for: Brazilian well/basin grounding; heavier access process than
+  Sodir.
 
 ### Geomechanics
 
@@ -62,17 +73,6 @@
   The original Archie paper. Use for: first-principles saturation from
   resistivity.
 
-### Field data (grounding examples in real wells)
-
-- [Sodir FactPages — Norwegian Offshore Directorate](https://factpages.sodir.no/)
-  Open data on every NCS wellbore (~10,000), field, discovery, and
-  licence; daily-synced, no registration. Use for: real NCS depths,
-  pressures, and field facts in lesson examples.
-- [ANP technical data access (Brazil)](https://www.gov.br/anp/pt-br/assuntos/exploracao-e-producao-de-oleo-e-gas/dados-tecnicos/acesso-aos-dados-tecnicos)
-  Brazil's regulator's portal for E&P technical data (well logs, seismic).
-  Use for: Brazilian well/basin grounding; heavier access process than
-  Sodir.
-
 ### Geology & geophysics
 
 - Book: _Elements of Petroleum Geology_ — Selley & Sonnenberg
@@ -93,6 +93,18 @@
 - Book: _Phase Behavior_ — Whitson & Brulé (SPE Monograph 20)
   NTNU-linked (Whitson). Use for: deeper PVT and EOS work.
 
+### Upstream economics & decision analysis
+
+- [Book: _Decision Analysis for Petroleum Exploration_ — Newendorp & Schuyler (3.0 ed.)](https://www.abebooks.com/9780966440140/Decision-Analysis-Petroleum-Exploration-3.0-0966440145/plp)
+  The standard text on E&P risk and decision analysis since 1975; ~330
+  concepts, Monte Carlo pioneering. Use for: expected value, decision
+  trees, value of information — the commercial arc's spine.
+- Book: _Project Economics and Decision Analysis_ (2 vols) — Mian
+  (PennWell)
+  Working-engineer treatment of NPV, IRR, cash-flow construction, and
+  probabilistic methods. Use for: the quantitative economics drills
+  (link to be verified).
+
 ## Wisdom (Communities)
 
 - [SPE — Society of Petroleum Engineers](https://www.spe.org/)
@@ -101,8 +113,16 @@
   OnePetro paper access likely via membership/employer.
 - Workplace subsurface team (geologists, petrophysicists, reservoir
   engineers)
-  The mission's real proving ground. Use for: deliberately asking "why"
+  The technical proving ground. Use for: deliberately asking "why"
   questions after each lesson and stress-testing recall in meetings.
+- Workplace project economists & development/commercial team
+  The commercial proving ground for success criteria 3–5. Use for:
+  testing value-language fluency — ask them to walk through one real
+  economic model or investment case once the commercial arc starts.
+- [SPEE — Society of Petroleum Evaluation Engineers](https://spee.org/)
+  The professional body for petroleum economic evaluation. Use for:
+  evaluation standards and practice notes when the commercial arc
+  deepens.
 
 ## Gaps
 
@@ -110,3 +130,6 @@
 - Pre-salt drilling-engineering papers (salt creep, casing design in
   salt, Santos well examples) not yet collected from OnePetro — needs
   SPE/employer access.
+- Mian's publisher/edition link not yet verified; no free, high-trust
+  online primer for petroleum project economics found yet — needed
+  before the first commercial lesson.

@@ -2,14 +2,10 @@
 
 Canonical terminology for this workspace: petroleum engineering
 fundamentals, from subsurface through well delivery, plus upstream
-economics as the commercial arc develops.
-
-Terms enter this glossary only once the user demonstrably understands
-them. The seed below is vocabulary from 15 years of D&C practice
-(LR-0001). Theory terms taught in lessons (effective stress, stress
-path, undercompaction, hoop stress, Mohr–Coulomb, UCS, …) are promoted
-here after correct spaced retrieval — first candidates are pending the
-Lesson 0002 quiz round (LR-0002).
+economics as the commercial arc develops. A term appears here once it is
+demonstrably understood — so this list is a record of what is known, not
+a dictionary to study. (Promotion mechanics: NOTES.md, "Glossary
+policy".)
 
 ## Terms
 
