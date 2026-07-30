@@ -34,18 +34,34 @@ session log at the bottom.
 
 ## Curriculum thread (working plan — steer by learning records)
 
+Full technical span (MISSION.md delegates scope detail here): fluid
+mechanics, thermodynamics, geomechanics, geology, geophysics,
+petrophysics, reservoir engineering, drilling, well design, completions —
+plus upstream economics & development decision-making at working
+quantitative level (LR-0003).
+
 1. Geomechanics spine (familiar ground, rebuilt from theory): stress →
    pore pressure → effective stress → rock failure → frac gradient →
    wellbore stability → mud weight window.
 2. Then petrophysics (porosity, Archie, logs) → reservoir (Darcy, PI,
    material balance) → fluids/PVT → geology/geophysics → completions
    theory (inflow, skin, nodal) → thermodynamics.
-3. Brazil-flavored lessons queued for later in the sequence: salt
+3. Commercial arc: roughly every 4th–5th lesson is a value/decision
+   lesson reusing the technical material just learned (first one after
+   the geomechanics spine: cost & risk pricing of wellbore-stability
+   failures in casing-seat selection). Weighting: development decisions
+   and project economics deepest; portfolio/business level as context
+   lessons only.
+4. Brazil-flavored lessons queued for later in the sequence: salt
    mechanics (creep, casing loads); carbonate petrophysics (where
    Archie-in-clastics assumptions break); deepwater well-control margins.
 
 ## Session log
 
+- 2026-07-30 (2) · Mission expanded after brainstorm (LR-0003): end-state
+  is connecting technical + commercial + strategic dots; upstream
+  economics added at working quantitative level. MISSION.md and
+  curriculum thread rewritten; NOTES.md rewritten clean same day.
 - 2026-07-30 · Workspace initialized; mission captured. Lesson 0001
   (effective stress & the pressure ladder) and Reference 0001 (pressure
   gradients cheat sheet) created. Units preference and dual-basin context
