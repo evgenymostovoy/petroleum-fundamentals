@@ -1,52 +1,54 @@
 # Notes
 
-Working notes and user preferences for teaching.
+Working notes and user preferences for teaching. Durable facts and
+preferences live in the top sections; per-session events go in the
+session log at the bottom.
 
-## User profile
+## Learner profile
 
-- Drilling & completion engineer, 15 yrs NCS. B.Sc. Gubkin, M.Sc. NTNU.
-- NOT a beginner: applied judgment strong, theory patchy/non-automatic.
-- Goal is **instant recall** of core numbers, formulas, causal chains
-  (storage strength, not fluency).
+- Drilling & completion engineer, 15 years on the NCS. B.Sc. Gubkin,
+  M.Sc. NTNU. Company operates on the NCS plus two deepwater Brazil
+  projects.
+- Not a beginner: expert applied judgment; theory patchy and
+  non-automatic.
+- Target is storage strength — core numbers, formulas, and causal chains
+  at instant recall — not in-session fluency. A same-session quiz score
+  is evidence of fluency only; "known" requires correct spaced retrieval.
 
-## Teaching preferences (inferred from mission — confirm as we go)
+## Standing preferences
 
-- Units: SI/NCS first (sg EMW, bar, MPa, m), **Brazilian field units
-  second** (user correction, 2026-07-30): pressure in psi, density in
-  lb/gal (ppg), depth in meters — i.e. p [psi] = 0.1704 · ppg · TVD [m].
-  Do NOT use US field units (psi/ft with depth in ft) as the secondary
-  system. Always show both systems.
-- Context (2026-07-30): company has NCS projects + two deepwater Brazil
-  projects. Salt examples with Brazilian pre-salt where natural: carbonate
-  reservoirs (microbialites/coquinas), salt tectonics & salt drilling,
-  deepwater riser margin / narrow windows, Santos–Campos basin settings.
-  Planned dedicated lessons later in the sequence: salt mechanics (creep,
-  casing loads), carbonate petrophysics (vs. Archie-in-clastics),
-  deepwater well control margins.
-- Tone: peer-to-peer technical, no hand-holding on field practice; DO
-  rebuild theory from first principles even when it feels "basic".
-- Every lesson: retrieval quiz + spaced-review hooks back to earlier
-  lessons (interleaving).
-- Causal chains > procedures. He knows WHAT is done; teach WHY.
+- **Units.** SI/NCS first (sg EMW, bar, MPa, m). Brazilian field units
+  second: pressure in psi, density in lb/gal, depth in meters —
+  p [psi] = 0.1704 · ρ [lb/gal] · TVD [m]. US field units (psi/ft with
+  depth in feet) only as parenthetical jargon notes (e.g. "1 psi/ft"
+  overburden), never as a working system.
+- **Examples.** Draw from both basins where natural: NCS clastics and
+  chalk; Brazilian pre-salt carbonates (microbialites/coquinas), salt
+  tectonics, deepwater narrow margins (Santos–Campos settings).
+- **Tone.** Peer-to-peer technical. Rebuild theory from first principles
+  even when it feels basic; never teach field practice they already do
+  daily (see MISSION.md, out of scope).
+- **Causal chains over procedures.** They know what is done; teach why.
+- **Every lesson:** retrieval quiz with immediate feedback, plus 1–2
+  interleaved questions from earlier lessons for spaced review.
 
-## Curriculum thread (working plan, adjust by learning records)
+## Curriculum thread (working plan — steer by learning records)
 
-1. Geomechanics spine first (his home turf, rebuilt from theory):
-   stress → pore pressure → effective stress → rock failure → frac
-   gradient → wellbore stability → mud weight window.
+1. Geomechanics spine (familiar ground, rebuilt from theory): stress →
+   pore pressure → effective stress → rock failure → frac gradient →
+   wellbore stability → mud weight window.
 2. Then petrophysics (porosity, Archie, logs) → reservoir (Darcy, PI,
    material balance) → fluids/PVT → geology/geophysics → completions
-   theory (inflow, skin, nodal) → thermo.
-3. Interleave: each lesson's quiz pulls 1-2 questions from earlier
-   lessons.
+   theory (inflow, skin, nodal) → thermodynamics.
+3. Brazil-flavored lessons queued for later in the sequence: salt
+   mechanics (creep, casing loads); carbonate petrophysics (where
+   Archie-in-clastics assumptions break); deepwater well-control margins.
 
 ## Session log
 
-- 2026-07-30: Workspace initialized. Mission captured. Lesson 0001
-  (effective stress & the pressure ladder) + reference 0001 (pressure
-  gradients cheat sheet) created.
-- 2026-07-30 (later): Units preference corrected — Brazilian field units
-  (psi, lb/gal, m; 0.1704) as secondary system, NOT US field units.
-- 2026-07-30 (later): User completed Lesson 0001, quiz 5/5 (LR-0002).
-  Lesson 0002 (rock failure & collapse pressure) created with 2
-  interleaved L1 questions. Spaced re-test of L1 pending next session.
+- 2026-07-30 · Workspace initialized; mission captured. Lesson 0001
+  (effective stress & the pressure ladder) and Reference 0001 (pressure
+  gradients cheat sheet) created. Units preference and dual-basin context
+  established. Lesson 0001 quiz 5/5 same-session (LR-0002). Lesson 0002
+  (rock failure & collapse pressure) created with 2 interleaved L1
+  questions — spaced re-test of L1 pending next session.
