@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2 · Rock Failure and the Collapse Pressure</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header class="lesson-header">
+    <div class="kicker">Lesson 0002 · Geomechanics spine · ~15 min</div>
+    <h1>Rock Failure and the Collapse Pressure</h1>
+    <p class="subtitle">Why the mud weight window has a geomechanical lower bound — and why breakouts always know where σ<sub>h</sub> points.</p>
+  </header>
+
+  <p>In <a href="0001-effective-stress-and-the-pressure-ladder.html">Lesson 1</a>
+  the window's bounds were pore pressure below and fracture pressure above.
+  But you've raised mud weight to cure cavings plenty of times — well above
+  pore pressure. This lesson rebuilds why: <strong>drilling a hole
+  concentrates stress at the wall, and rock at the wall fails in shear when
+  the mud doesn't push back hard enough.</strong> Two equations do all the
+  work.</p>
+
+  <h2>1 · When does rock break? Mohr–Coulomb</h2>
+
+  <div class="formula">
+    <span class="label">Mohr–Coulomb shear failure criterion</span>
+    τ = S<sub>0</sub> + μ·σ<sub>n</sub>′ &nbsp;&nbsp;&nbsp; (S<sub>0</sub> = cohesion, μ = tan φ = internal friction)
+  </div>
+
+  <p>A plane inside the rock fails when the shear stress on it beats the
+  rock's cohesion plus friction × the effective normal stress clamping it
+  shut. Note it is σ<sub>n</sub><strong>′</strong> — Lesson 1's effective
+  stress — that does the clamping: raise pore pressure and you unclamp
+  every potential failure plane in the rock. That single idea explains
+  everything from wellbore collapse in overpressured shale to injection-induced
+  seismicity
+  (<a href="https://petrowiki.spe.org/Rock_failure_relationships">PetroWiki:
+  rock failure relationships</a>).</p>
+
+  <div class="key-numbers">
+    <div class="key-number"><span class="value">μ ≈ 0.6–1.0</span><span class="caption">Byerlee friction — remarkably universal across rock types</span></div>
+    <div class="key-number"><span class="value">φ ≈ 30°</span><span class="caption">typical friction angle (μ = tan φ ≈ 0.6)</span></div>
+    <div class="key-number"><span class="value">UCS = 2S<sub>0</sub>·tan(45°+φ/2)</span><span class="caption">≈ 3.5·S<sub>0</sub> at φ = 30°</span></div>
+    <div class="key-number"><span class="value">2–30 MPa</span><span class="caption">UCS of weak overburden shales — the rocks that actually cause trouble</span></div>
+  </div>
+
+  <h2>2 · The hole concentrates stress: Kirsch</h2>
+
+  <p>Far from the well, the rock carries σ<sub>H</sub> and σ<sub>h</sub>.
+  The hole must carry the same load with rock missing — so hoop (tangential)
+  stress concentrates at the wall. For a vertical well, at the two extreme
+  azimuths:</p>
+
+  <div class="formula">
+    <span class="label">Kirsch — hoop stress at the wall of a vertical well</span>
+    max (at σ<sub>h</sub> azimuth): σ<sub>θ</sub> = 3σ<sub>H</sub> − σ<sub>h</sub> − p<sub>w</sub><br>
+    min (at σ<sub>H</sub> azimuth): σ<sub>θ</sub> = 3σ<sub>h</sub> − σ<sub>H</sub> − p<sub>w</sub>
+  </div>
+
+  <p>Read the two levers. The <em>far-field stresses</em> set the load;
+  the <em>mud pressure p<sub>w</sub></em> is your only knob, and it appears
+  with a minus sign: <strong>raising mud weight lowers hoop stress</strong>,
+  substituting fluid support for the missing rock.</p>
+
+  <div class="chain">
+    <div class="chain-title">Causal chain A — breakouts (mud too light)</div>
+    <ol>
+      <li>Low p<sub>w</sub> → hoop stress high, and highest at the σ<sub>h</sub> azimuth (the 3σ<sub>H</sub> term dominates).</li>
+      <li>Effective hoop stress vs. Mohr–Coulomb: the wall fails in shear on two diametrically opposed patches — <strong>breakouts, always at the σ<sub>h</sub> azimuth</strong>.</li>
+      <li>Cavings at the shakers; enlarged, ovalized hole on the caliper/image log.</li>
+      <li>Because the azimuth is set by the stress field, image-logged breakouts are how geomechanicists <em>measure</em> σ<sub>h</sub> orientation — your caliper data is a stress instrument.</li>
+    </ol>
+  </div>
+
+  <div class="chain">
+    <div class="chain-title">Causal chain B — tensile fractures (mud too heavy)</div>
+    <ol>
+      <li>High p<sub>w</sub> → the <em>minimum</em> hoop stress (at the σ<sub>H</sub> azimuth) drops through zero into tension.</li>
+      <li>When effective σ<sub>θ</sub> ≤ −T<sub>0</sub> (tensile strength, often ≈ 0 for jointed rock), the wall cracks open — <strong>drilling-induced tensile fractures, always at the σ<sub>H</sub> azimuth</strong>.</li>
+      <li>Push further and the fracture propagates away from the wall against σ<sub>h</sub> → losses. This is Lesson 1's fracture pressure, now derived instead of memorized.</li>
+    </ol>
+  </div>
+
+  <div class="callout">
+    <strong>The window, completed:</strong> collapse pressure (shear at the
+    wall) sets the practical lower bound — often above pore pressure in weak
+    or overpressured shale. Fracture pressure (tension at the wall) sets the
+    upper. Both are the same Kirsch equation with your mud weight sliding
+    the hoop stress up and down. A well that cavings-in at 1.45 sg and loses
+    at 1.65 sg is just showing you its stress state.
+  </div>
+
+  <h2>3 · Retrieval practice</h2>
+
+  <p>From memory — including two throwbacks to Lesson 1. Spaced retrieval
+  is what converts fluency into storage.</p>
+
+  <div id="quiz"></div>
+
+  <h2>Primary source</h2>
+
+  <p><strong>Fjær et al., <a href="https://shop.elsevier.com/books/petroleum-related-rock-mechanics/fjaer/978-0-444-88913-3"><em>Petroleum
+  Related Rock Mechanics</em></a></strong> — the rock failure and borehole
+  stability chapters (Mohr–Coulomb, Kirsch solution, breakout mechanics).
+  Zoback's <em>Reservoir Geomechanics</em> chapters 4 and 6 cover the same
+  ground with excellent field image-log examples.</p>
+
+  <footer class="lesson-footer">
+    <p>Next up: from stress to logs — porosity, density, and sonic; the
+    petrophysics that feeds every input you used in these two lessons.</p>
+    <p>Previous: <a href="0001-effective-stress-and-the-pressure-ladder.html">Effective
+    Stress and the Pressure Ladder</a> ·
+    Reference: <a href="../reference/0001-pressure-gradients-cheat-sheet.html">Pressure
+    gradients cheat sheet</a> ·
+    <a href="../index.html">Home</a></p>
+    <p><em>Anything unclear? Ask your teacher (the agent) — follow-up
+    questions are part of the course, not an interruption.</em></p>
+  </footer>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script>
+renderQuiz('quiz', [
+  {
+    q: 'Mohr–Coulomb: S0 = 10 MPa, μ = 0.6, effective normal stress = 50 MPa. What shear stress causes failure?',
+    options: ['40 MPa', '30 MPa', '36 MPa', '46 MPa'],
+    answer: 0,
+    explain: 'τ = S0 + μ·σn′ = 10 + 0.6×50 = 40 MPa. Cohesion plus friction times the effective clamping stress.'
+  },
+  {
+    q: 'At which azimuth around a vertical wellbore do breakouts form?',
+    options: ['At the σh azimuth', 'At the σH azimuth', 'At 45° to σH', 'At random azimuths'],
+    answer: 0,
+    explain: 'Hoop stress is maximum at the σh azimuth (σθ = 3σH − σh − pw, the 3σH term acting there), so shear failure localizes there — which is why image-logged breakouts measure stress orientation.'
+  },
+  {
+    q: 'σH = 600 bar, σh = 500 bar, mud pressure pw = 350 bar. Maximum Kirsch hoop stress at the wall?',
+    options: ['950 bar', '750 bar', '850 bar', '1050 bar'],
+    answer: 0,
+    explain: 'σθ,max = 3σH − σh − pw = 1800 − 500 − 350 = 950 bar. Note how the mud pressure directly offsets the concentration — your one knob.'
+  },
+  {
+    q: 'Raising mud weight cures cavings. Through which mechanism, in stress terms?',
+    options: [
+      'Lower hoop stress from added wall support',
+      'Higher hoop stress from added wall support',
+      'Lower pore pressure in the near field',
+      'Higher rock strength from mud filtrate'
+    ],
+    answer: 0,
+    explain: 'pw enters Kirsch with a minus sign: more mud pressure → less hoop stress → the Mohr–Coulomb criterion is no longer exceeded at the wall. (Time-dependent shale effects can undo this — a later lesson.)'
+  },
+  {
+    q: 'Drilling-induced tensile fractures on an image log strike at which azimuth, and why?',
+    options: [
+      'σH azimuth, where hoop stress is minimum',
+      'σh azimuth, where hoop stress is minimum',
+      'σH azimuth, where hoop stress is maximum',
+      'σh azimuth, where hoop stress is maximum'
+    ],
+    answer: 0,
+    explain: 'The minimum hoop stress (3σh − σH − pw) sits at the σH azimuth; heavy mud drives it tensile there first. DITFs therefore point along σH — the complement of breakouts.'
+  },
+  {
+    q: 'Lesson 1 throwback: what pressure does a 1.35 sg mud exert at 3000 m TVD?',
+    options: ['397 bar', '362 bar', '415 bar', '380 bar'],
+    answer: 0,
+    explain: '0.0981 × 1.35 × 3000 = 397 bar. (Brazilian field units: 0.1704 × 11.3 lb/gal × 3000 m ≈ 5780 psi ≈ 399 bar — rounding in the sg↔ppg conversion.)'
+  },
+  {
+    q: 'Lesson 1 throwback: deplete a reservoir by 150 bar — roughly how far does σh fall?',
+    options: ['Around 90 bar', 'Exactly 150 bar', 'Around 10 bar', 'Around 200 bar'],
+    answer: 0,
+    explain: 'Stress path Δσh ≈ 0.5–0.8 × Δpp → ~75–120 bar. This is also why the collapse and frac curves both move after depletion — the whole window shifts, not just one edge.'
+  }
+]);
+</script>
+</body>
+</html>
