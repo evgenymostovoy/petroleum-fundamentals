@@ -1,0 +1,160 @@
+/* Shared course stylesheet — linked by every lesson and reference doc.
+   Tufte-inspired: generous measure, serif body, restrained color. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #faf9f6;
+  --text: #1f2933;
+  --muted: #6b7280;
+  --accent: #b45309;
+  --accent-soft: #fdf3e3;
+  --card: #ffffff;
+  --border: #e5e1d8;
+  --good: #15803d;
+  --bad: #b91c1c;
+  --formula-bg: #f4f1ea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181d;
+    --text: #e8e6e1;
+    --muted: #9ca3af;
+    --accent: #f59e0b;
+    --accent-soft: #2a2216;
+    --card: #1f2229;
+    --border: #33373f;
+    --good: #4ade80;
+    --bad: #f87171;
+    --formula-bg: #1d2026;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  padding: 2rem 1rem 4rem;
+  font-size: 1.05rem;
+}
+
+main { max-width: 46rem; margin: 0 auto; }
+
+header.lesson-header { margin-bottom: 2rem; }
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+h1 { font-size: 1.9rem; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 0.4rem; }
+.subtitle { color: var(--muted); font-size: 1.05rem; font-style: italic; }
+
+h2 {
+  font-size: 1.35rem;
+  margin: 2.2rem 0 0.8rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+
+p { margin-bottom: 1rem; }
+ul, ol { margin: 0 0 1rem 1.4rem; }
+li { margin-bottom: 0.35rem; }
+
+a { color: var(--accent); }
+
+strong { font-weight: 700; }
+
+/* Formula block */
+.formula {
+  background: var(--formula-bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  margin: 1rem 0;
+  font-family: 'Cambria Math', Georgia, serif;
+  font-size: 1.12rem;
+  overflow-x: auto;
+}
+.formula .label {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+/* Key number cards */
+.key-numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.6rem;
+  margin: 1rem 0 1.4rem;
+}
+.key-number {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+}
+.key-number .value { font-size: 1.25rem; font-weight: 700; color: var(--accent); }
+.key-number .caption { font-size: 0.82rem; color: var(--muted); line-height: 1.35; display: block; margin-top: 0.2rem; }
+
+/* Causal chain */
+.chain {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 1rem 0;
+}
+.chain ol { margin: 0 0 0 1.3rem; }
+.chain .chain-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+/* Callouts */
+.callout {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.98rem;
+}
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: left; }
+th { background: var(--formula-bg); font-family: Georgia, serif; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Footer nav */
+footer.lesson-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; font-size: 10.5pt; padding: 0; }
+  .quiz-container, .no-print { display: none; }
+  a { color: #000; text-decoration: none; }
+  .key-number .value { color: #000; }
+}

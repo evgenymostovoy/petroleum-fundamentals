@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 1 · Effective Stress and the Pressure Ladder</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header class="lesson-header">
+    <div class="kicker">Lesson 0001 · Geomechanics spine · ~15 min</div>
+    <h1>Effective Stress and the Pressure Ladder</h1>
+    <p class="subtitle">The three numbers that sit under every mud weight, casing seat, and lost-circulation event you've ever dealt with.</p>
+  </header>
+
+  <p>You've used the mud weight window your whole career. This lesson rebuilds
+  the theory <em>underneath</em> it, so that overburden, pore pressure, and
+  effective stress — and the causal chains connecting them — are at instant
+  recall. One idea does most of the work: <strong>rock feels effective
+  stress, not total stress.</strong></p>
+
+  <h2>1 · The pressure ladder</h2>
+
+  <p>At any depth, three pressure/stress curves define the game. From lowest
+  to highest (in a normally pressured well):</p>
+
+  <ol>
+    <li><strong>Hydrostatic pore pressure</strong> — the weight of a connected
+    column of formation water.</li>
+    <li><strong>Fracture pressure</strong> — set mostly by the minimum
+    horizontal stress σ<sub>h</sub>, it lives <em>between</em> the other two.</li>
+    <li><strong>Overburden (vertical stress σ<sub>v</sub>)</strong> — the
+    weight of everything above: rock grains <em>plus</em> pore fluid
+    <em>plus</em> (offshore) the seawater column.</li>
+  </ol>
+
+  <div class="formula">
+    <span class="label">Pressure from a fluid column (memorize both forms)</span>
+    p [bar] = 0.0981 · ρ [sg] · TVD [m] &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; p [psi] = 0.052 · ρ [ppg] · TVD [ft]
+  </div>
+
+  <div class="key-numbers">
+    <div class="key-number"><span class="value">0.0981 bar/m</span><span class="caption">freshwater gradient per 1.00 sg (= 0.433 psi/ft)</span></div>
+    <div class="key-number"><span class="value">≈1.03 sg</span><span class="caption">seawater / typical NCS normal pore pressure</span></div>
+    <div class="key-number"><span class="value">≈1 psi/ft</span><span class="caption">overburden rule of thumb ≈ 2.31 sg EMW (deep, compacted)</span></div>
+    <div class="key-number"><span class="value">8.345 ppg</span><span class="caption">= 1.00 sg &nbsp;·&nbsp; 1 bar = 14.50 psi</span></div>
+  </div>
+
+  <p>Where do these come from? A gradient is just ρg: for freshwater,
+  1000 kg/m³ × 9.81 m/s² = 9.81 kPa/m = 0.0981 bar/m. Overburden is the
+  integral of <em>bulk</em> density (grains + fluid, typically 1.8–2.6 g/cm³,
+  increasing with compaction) from surface to depth — which is why the
+  overburden <em>gradient in EMW terms</em> is low in shallow offshore
+  sections (seawater + soft sediment above) and climbs toward ~2.3 sg with
+  depth.</p>
+
+  <h2>2 · Effective stress — the one equation</h2>
+
+  <div class="formula">
+    <span class="label">Terzaghi / Biot effective stress</span>
+    σ′ = σ − α·p<sub>p</sub> &nbsp;&nbsp;&nbsp; (α = Biot coefficient ≈ 1 for soft/weak rocks; Terzaghi takes α = 1)
+  </div>
+
+  <p>The skeleton of rock grains carries only the part of total stress not
+  carried by the pore fluid. Everything mechanical the rock does —
+  <strong>compacting, strengthening, failing, fracturing</strong> — responds
+  to σ′, not σ. This single idea generates the causal chains below, which are
+  the real payload of this lesson
+  (<a href="https://petrowiki.spe.org/Stress_impact_on_rock_properties">PetroWiki:
+  stress impact on rock properties</a>,
+  <a href="https://petrowiki.spe.org/Rock_failure_relationships">rock failure
+  relationships</a>).</p>
+
+  <div class="chain">
+    <div class="chain-title">Causal chain A — why overpressure exists and how logs see it</div>
+    <ol>
+      <li>Rapid burial of low-permeability shale → pore fluid cannot escape as fast as load is added.</li>
+      <li>The fluid carries part of the new load → p<sub>p</sub> rises above hydrostatic (<em>undercompaction / disequilibrium compaction</em> — the dominant mechanism in young basins).</li>
+      <li>σ′ = σ<sub>v</sub> − p<sub>p</sub> stays anomalously <em>low</em> → compaction stalls → porosity stays anomalously <em>high</em> for that depth.</li>
+      <li>High porosity → slow sonic velocity, low density, low resistivity vs. the normal compaction trend → this departure is exactly what Eaton-type pore-pressure prediction quantifies.</li>
+    </ol>
+  </div>
+
+  <div class="chain">
+    <div class="chain-title">Causal chain B — why depleted zones take losses</div>
+    <ol>
+      <li>Production drops p<sub>p</sub> in the reservoir.</li>
+      <li>σ′ rises, the rock compacts slightly, and poroelasticity pulls the minimum horizontal stress σ<sub>h</sub> down with it: Δσ<sub>h</sub> ≈ 0.5–0.8 · Δp<sub>p</sub> (the reservoir <em>stress path</em>).</li>
+      <li>Fracture pressure ≈ f(σ<sub>h</sub>) → the frac gradient falls almost in step with depletion.</li>
+      <li>Your old mud weight now sits <em>above</em> the new frac gradient → losses in infill wells through depleted sands. Same physics, reversed sign, explains why the frac gradient is <em>high</em> in overpressured zones — and why the drilling margin narrows there.</li>
+    </ol>
+  </div>
+
+  <div class="callout">
+    <strong>The window, from first principles:</strong> mud weight must exceed
+    p<sub>p</sub> (well control) and collapse pressure (σ′-driven shear
+    failure of the wall) but stay below fracture pressure (σ<sub>h</sub>-driven).
+    Every casing seat is where these curves squeeze the window shut.
+  </div>
+
+  <h2>3 · Retrieval practice</h2>
+
+  <p>Answer from memory — no scrolling up. Wrong answers teach you more than
+  right ones; the explanations appear immediately.</p>
+
+  <div id="quiz"></div>
+
+  <h2>Primary source</h2>
+
+  <p>Read <strong>Fjær, Holt, Horsrud &amp; Raaen,
+  <a href="https://shop.elsevier.com/books/petroleum-related-rock-mechanics/fjaer/978-0-444-88913-3"><em>Petroleum
+  Related Rock Mechanics</em></a></strong> — Chapter 1 (elasticity and
+  effective stress) and the in-situ stress chapter. It is the NTNU/SINTEF
+  standard, written for exactly your background. Zoback's
+  <em>Reservoir Geomechanics</em> (Cambridge) chapters 1–2 is the strong
+  second opinion, with a free companion lecture series online.</p>
+
+  <footer class="lesson-footer">
+    <p>Next up: rock failure criteria and wellbore collapse — why the mud
+    weight window has a <em>lower</em> geomechanical bound too.</p>
+    <p>Reference: <a href="../reference/0001-pressure-gradients-cheat-sheet.html">Pressure
+    gradients &amp; unit conversions cheat sheet</a> ·
+    <a href="../index.html">Home</a></p>
+    <p><em>Anything unclear? Ask your teacher (the agent) — follow-up
+    questions are part of the course, not an interruption.</em></p>
+  </footer>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script>
+renderQuiz('quiz', [
+  {
+    q: 'What is the hydrostatic gradient of freshwater (1.00 sg), in bar/m?',
+    options: ['0.0981 bar/m', '0.1081 bar/m', '0.0891 bar/m', '0.1013 bar/m'],
+    answer: 0,
+    explain: 'ρg = 1000 kg/m³ × 9.81 m/s² = 9.81 kPa/m = 0.0981 bar/m. Hence p [bar] = 0.0981 × sg × TVD [m]. (Field units: 0.433 psi/ft.)'
+  },
+  {
+    q: 'Overburden σv = 520 bar and pore pressure = 310 bar. Vertical effective stress σv′ (Terzaghi)?',
+    options: ['210 bar', '830 bar', '310 bar', '160 bar'],
+    answer: 0,
+    explain: 'σ′ = σ − pp = 520 − 310 = 210 bar. The grain skeleton carries only what the pore fluid does not.'
+  },
+  {
+    q: 'What bottomhole pressure does a 1.60 sg mud exert at 2500 m TVD?',
+    options: ['392 bar', '340 bar', '425 bar', '361 bar'],
+    answer: 0,
+    explain: '0.0981 × 1.60 × 2500 = 392 bar. Drill this multiplication until it is reflexive — it is the workhorse of every well-control and design calculation.'
+  },
+  {
+    q: 'A reservoir is depleted by 100 bar. Roughly how far does the minimum horizontal stress σh fall?',
+    options: ['Around 60 bar', 'Exactly 100 bar', 'Around 0 bar', 'Around 130 bar'],
+    answer: 0,
+    explain: 'The reservoir stress path gives Δσh ≈ 0.5–0.8 × Δpp, so ~50–80 bar — which is why frac gradients collapse in depleted sands and infill wells take losses.'
+  },
+  {
+    q: 'Why does overpressured (undercompacted) shale show anomalously slow sonic velocity?',
+    options: [
+      'Excess porosity preserved by trapped fluid',
+      'Higher density from increased clay content',
+      'Gas invasion from the reservoir below',
+      'Temperature effects on the sonic tool'
+    ],
+    answer: 0,
+    explain: 'High pp → low effective stress → compaction stalls → porosity stays high for that depth → slow sonic. The departure from the normal compaction trend is the basis of Eaton-type pore pressure prediction.'
+  }
+]);
+</script>
+</body>
+</html>

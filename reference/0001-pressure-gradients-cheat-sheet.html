@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference · Pressure Gradients &amp; Unit Conversions</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header class="lesson-header">
+    <div class="kicker">Reference 0001 · Geomechanics / Drilling</div>
+    <h1>Pressure Gradients &amp; Unit Conversions</h1>
+    <p class="subtitle">The core numbers to hold at instant recall. Print me.</p>
+  </header>
+
+  <h2>Master formulas</h2>
+
+  <div class="formula">
+    <span class="label">Hydrostatic pressure — SI / NCS</span>
+    p [bar] = 0.0981 · ρ [sg] · TVD [m]
+  </div>
+  <div class="formula">
+    <span class="label">Hydrostatic pressure — field units</span>
+    p [psi] = 0.052 · ρ [ppg] · TVD [ft]
+  </div>
+  <div class="formula">
+    <span class="label">Terzaghi / Biot effective stress</span>
+    σ′ = σ − α·p<sub>p</sub> &nbsp;&nbsp; (α ≈ 1 for weak/soft rock)
+  </div>
+  <div class="formula">
+    <span class="label">Equivalent mud weight from a pressure at depth</span>
+    EMW [sg] = p [bar] / (0.0981 · TVD [m])
+  </div>
+
+  <h2>Unit conversions</h2>
+
+  <table>
+    <tr><th>From</th><th>To</th><th class="num">Multiply by</th></tr>
+    <tr><td>sg (g/cm³)</td><td>ppg</td><td class="num">8.345</td></tr>
+    <tr><td>sg</td><td>psi/ft</td><td class="num">0.433</td></tr>
+    <tr><td>sg</td><td>bar/m</td><td class="num">0.0981</td></tr>
+    <tr><td>bar</td><td>psi</td><td class="num">14.50</td></tr>
+    <tr><td>MPa</td><td>bar</td><td class="num">10</td></tr>
+    <tr><td>m</td><td>ft</td><td class="num">3.281</td></tr>
+    <tr><td>ppg</td><td>psi/ft</td><td class="num">0.052</td></tr>
+  </table>
+
+  <h2>Canonical gradients &amp; densities</h2>
+
+  <table>
+    <tr><th>Quantity</th><th class="num">sg (EMW)</th><th class="num">bar/m</th><th class="num">psi/ft</th><th class="num">ppg</th></tr>
+    <tr><td>Freshwater</td><td class="num">1.00</td><td class="num">0.0981</td><td class="num">0.433</td><td class="num">8.34</td></tr>
+    <tr><td>Seawater / NCS normal p<sub>p</sub></td><td class="num">≈1.03</td><td class="num">0.101</td><td class="num">0.446</td><td class="num">8.6</td></tr>
+    <tr><td>GoM normal p<sub>p</sub> (saltier brine)</td><td class="num">≈1.07</td><td class="num">0.105</td><td class="num">0.465</td><td class="num">8.95</td></tr>
+    <tr><td>Overburden rule of thumb (deep, compacted)</td><td class="num">≈2.31</td><td class="num">0.226</td><td class="num">≈1.0</td><td class="num">19.3</td></tr>
+    <tr><td>Typical sediment bulk density range</td><td class="num" colspan="4">1.8 – 2.6 g/cm³ (increases with compaction/depth)</td></tr>
+  </table>
+
+  <div class="callout">
+    <strong>Offshore overburden:</strong> in EMW terms the overburden gradient
+    starts low (seawater + uncompacted sediment above) and climbs toward
+    ~2.3 sg with depth. Never quote "1 psi/ft" for shallow offshore sections.
+  </div>
+
+  <h2>Depletion stress path</h2>
+
+  <table>
+    <tr><th>Quantity</th><th>Value</th></tr>
+    <tr><td>Δσ<sub>h</sub> / Δp<sub>p</sub> (reservoir stress path)</td><td>≈ 0.5 – 0.8</td></tr>
+    <tr><td>Consequence of depletion</td><td>frac gradient falls ≈ in step → losses in infill wells</td></tr>
+    <tr><td>Consequence of overpressure</td><td>frac gradient rises, but window vs. p<sub>p</sub> narrows</td></tr>
+  </table>
+
+  <h2>Worked micro-examples (cover the answers, recompute)</h2>
+
+  <table>
+    <tr><th>Question</th><th>Answer</th></tr>
+    <tr><td>1.60 sg mud at 2500 m TVD</td><td>0.0981 × 1.60 × 2500 = <strong>392 bar</strong></td></tr>
+    <tr><td>Normal p<sub>p</sub> (1.03 sg) at 3000 m</td><td>0.0981 × 1.03 × 3000 = <strong>303 bar</strong></td></tr>
+    <tr><td>σ<sub>v</sub> 520 bar, p<sub>p</sub> 310 bar → σ<sub>v</sub>′</td><td>520 − 310 = <strong>210 bar</strong></td></tr>
+    <tr><td>450 bar at 3500 m as EMW</td><td>450 / (0.0981 × 3500) = <strong>1.31 sg</strong></td></tr>
+  </table>
+
+  <footer class="lesson-footer">
+    <p>Source lesson: <a href="../lessons/0001-effective-stress-and-the-pressure-ladder.html">Effective
+    Stress and the Pressure Ladder</a> · <a href="../index.html">Home</a></p>
+    <p>Grounding: Fjær et al., <em>Petroleum Related Rock Mechanics</em>;
+    <a href="https://petrowiki.spe.org/Category:5.1.10_Reservoir_geomechanics">PetroWiki
+    reservoir geomechanics</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
