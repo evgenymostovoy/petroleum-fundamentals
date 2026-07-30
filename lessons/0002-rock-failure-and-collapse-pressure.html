@@ -46,11 +46,19 @@
     <div class="key-number"><span class="value">2–30 MPa</span><span class="caption">UCS of weak overburden shales — the rocks that actually cause trouble</span></div>
   </div>
 
+  <p style="font-size:0.9rem; color:var(--muted);">Sources for the numbers:
+  friction from Byerlee (1978, <em>Pure and Applied Geophysics</em> 116 —
+  the famous near-universality result); φ and UCS for sedimentary rocks in
+  Fjær et al., chs. 2–3; weak-shale strength correlations from Horsrud
+  (2001, <em>SPE Drilling &amp; Completion</em>, SPE-56017).</p>
+
   <h2>2 · The hole concentrates stress: Kirsch</h2>
 
   <p>Far from the well, the rock carries σ<sub>H</sub> and σ<sub>h</sub>.
   The hole must carry the same load with rock missing — so hoop (tangential)
-  stress concentrates at the wall. For a vertical well, at the two extreme
+  stress concentrates at the wall. The solution is Kirsch's (1898), applied
+  to boreholes in Fjær et al., ch. 4 and Zoback, <em>Reservoir
+  Geomechanics</em>, ch. 6. For a vertical well, at the two extreme
   azimuths:</p>
 
   <div class="formula">
@@ -70,7 +78,7 @@
       <li>Low p<sub>w</sub> → hoop stress high, and highest at the σ<sub>h</sub> azimuth (the 3σ<sub>H</sub> term dominates).</li>
       <li>Effective hoop stress vs. Mohr–Coulomb: the wall fails in shear on two diametrically opposed patches — <strong>breakouts, always at the σ<sub>h</sub> azimuth</strong>.</li>
       <li>Cavings at the shakers; enlarged, ovalized hole on the caliper/image log.</li>
-      <li>Because the azimuth is set by the stress field, image-logged breakouts are how geomechanicists <em>measure</em> σ<sub>h</sub> orientation — your caliper data is a stress instrument.</li>
+      <li>Because the azimuth is set by the stress field, image-logged breakouts are how geomechanicists <em>measure</em> σ<sub>h</sub> orientation — your caliper data is a stress instrument (the World Stress Map is largely built this way; Zoback, ch. 6).</li>
     </ol>
   </div>
 
@@ -125,54 +133,54 @@
 renderQuiz('quiz', [
   {
     q: 'Mohr–Coulomb: S0 = 10 MPa, μ = 0.6, effective normal stress = 50 MPa. What shear stress causes failure?',
-    options: ['40 MPa', '30 MPa', '36 MPa', '46 MPa'],
-    answer: 0,
+    options: ['30 MPa', '36 MPa', '40 MPa', '46 MPa'],
+    answer: 2,
     explain: 'τ = S0 + μ·σn′ = 10 + 0.6×50 = 40 MPa. Cohesion plus friction times the effective clamping stress.'
   },
   {
     q: 'At which azimuth around a vertical wellbore do breakouts form?',
-    options: ['At the σh azimuth', 'At the σH azimuth', 'At 45° to σH', 'At random azimuths'],
-    answer: 0,
+    options: ['At the σH azimuth', 'At the σh azimuth', 'At 45° to σH', 'At no fixed azimuth'],
+    answer: 1,
     explain: 'Hoop stress is maximum at the σh azimuth (σθ = 3σH − σh − pw, the 3σH term acting there), so shear failure localizes there — which is why image-logged breakouts measure stress orientation.'
   },
   {
     q: 'σH = 600 bar, σh = 500 bar, mud pressure pw = 350 bar. Maximum Kirsch hoop stress at the wall?',
-    options: ['950 bar', '750 bar', '850 bar', '1050 bar'],
-    answer: 0,
+    options: ['750 bar', '850 bar', '1050 bar', '950 bar'],
+    answer: 3,
     explain: 'σθ,max = 3σH − σh − pw = 1800 − 500 − 350 = 950 bar. Note how the mud pressure directly offsets the concentration — your one knob.'
   },
   {
     q: 'Raising mud weight cures cavings. Through which mechanism, in stress terms?',
     options: [
-      'Lower hoop stress from added wall support',
       'Higher hoop stress from added wall support',
+      'Lower hoop stress from added wall support',
       'Lower pore pressure in the near field',
-      'Higher rock strength from mud filtrate'
+      'Higher rock strength from mud filtrate invasion'
     ],
-    answer: 0,
+    answer: 1,
     explain: 'pw enters Kirsch with a minus sign: more mud pressure → less hoop stress → the Mohr–Coulomb criterion is no longer exceeded at the wall. (Time-dependent shale effects can undo this — a later lesson.)'
   },
   {
     q: 'Drilling-induced tensile fractures on an image log strike at which azimuth, and why?',
     options: [
-      'σH azimuth, where hoop stress is minimum',
       'σh azimuth, where hoop stress is minimum',
       'σH azimuth, where hoop stress is maximum',
+      'σH azimuth, where hoop stress is minimum',
       'σh azimuth, where hoop stress is maximum'
     ],
-    answer: 0,
+    answer: 2,
     explain: 'The minimum hoop stress (3σh − σH − pw) sits at the σH azimuth; heavy mud drives it tensile there first. DITFs therefore point along σH — the complement of breakouts.'
   },
   {
     q: 'Lesson 1 throwback: what pressure does a 1.35 sg mud exert at 3000 m TVD?',
-    options: ['397 bar', '362 bar', '415 bar', '380 bar'],
-    answer: 0,
+    options: ['362 bar', '397 bar', '415 bar', '380 bar'],
+    answer: 1,
     explain: '0.0981 × 1.35 × 3000 = 397 bar. (Brazilian field units: 0.1704 × 11.3 lb/gal × 3000 m ≈ 5780 psi ≈ 399 bar — rounding in the sg↔ppg conversion.)'
   },
   {
     q: 'Lesson 1 throwback: deplete a reservoir by 150 bar — roughly how far does σh fall?',
-    options: ['Around 90 bar', 'Exactly 150 bar', 'Around 10 bar', 'Around 200 bar'],
-    answer: 0,
+    options: ['Around 10 bar', 'Around 200 bar', 'Around 90 bar', 'Exactly 150 bar'],
+    answer: 2,
     explain: 'Stress path Δσh ≈ 0.5–0.8 × Δpp → ~75–120 bar. This is also why the collapse and frac curves both move after depletion — the whole window shifts, not just one edge.'
   }
 ]);

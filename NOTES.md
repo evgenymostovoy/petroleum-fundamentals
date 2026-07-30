@@ -56,8 +56,20 @@ quantitative level (LR-0003).
    mechanics (creep, casing loads); carbonate petrophysics (where
    Archie-in-clastics assumptions break); deepwater well-control margins.
 
+## Glossary policy
+
+GLOSSARY.md (workspace root) is canonical terminology. Seeded with
+practice-known D&C vocabulary only. Promote lesson-taught theory terms
+after correct spaced retrieval; adhere to glossary terms in every lesson.
+
 ## Session log
 
+- 2026-07-30 (3) · Skill-compliance audit applied: GLOSSARY.md created
+  (practice-known terms seeded); per-claim citations added to both
+  lessons; quiz option word counts fixed and answer indices varied in
+  source; index.html moved onto assets/course.css (doc-list styles now a
+  shared component); RESOURCES.md gained verified Zoback Stanford course,
+  Sodir FactPages, ANP data portal, AAPG Memoir 124.
 - 2026-07-30 (2) · Mission expanded after brainstorm (LR-0003): end-state
   is connecting technical + commercial + strategic dots; upstream
   economics added at working quantitative level. MISSION.md and

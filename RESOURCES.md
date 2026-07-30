@@ -18,8 +18,11 @@
   The NTNU/SINTEF standard text — ideal fit for an NTNU alum. Use for:
   elasticity, effective stress, rock failure, borehole stability.
 - Book: _Reservoir Geomechanics_ — Zoback (Cambridge)
-  Use for: in-situ stress state, pore pressure, wellbore stability; a free
-  companion course exists online (Stanford/edX).
+  Use for: in-situ stress state, pore pressure, wellbore stability.
+- [Course: Reservoir Geomechanics — Zoback, Stanford Online (free to audit)](https://online.stanford.edu/courses/soeees-ygeoresgeo202-reservoir-geomechanics)
+  20 lectures tracking the textbook. Use for: video companion to the
+  geomechanics spine lessons; homework problems for extra retrieval
+  practice.
 
 ### Drilling & well design
 
@@ -59,6 +62,17 @@
   The original Archie paper. Use for: first-principles saturation from
   resistivity.
 
+### Field data (grounding examples in real wells)
+
+- [Sodir FactPages — Norwegian Offshore Directorate](https://factpages.sodir.no/)
+  Open data on every NCS wellbore (~10,000), field, discovery, and
+  licence; daily-synced, no registration. Use for: real NCS depths,
+  pressures, and field facts in lesson examples.
+- [ANP technical data access (Brazil)](https://www.gov.br/anp/pt-br/assuntos/exploracao-e-producao-de-oleo-e-gas/dados-tecnicos/acesso-aos-dados-tecnicos)
+  Brazil's regulator's portal for E&P technical data (well logs, seismic).
+  Use for: Brazilian well/basin grounding; heavier access process than
+  Sodir.
+
 ### Geology & geophysics
 
 - Book: _Elements of Petroleum Geology_ — Selley & Sonnenberg
@@ -66,6 +80,11 @@
 - Book: _Petroleum Geoscience_ — Gluyas & Swarbrick
   Use for: the geology↔engineering bridge, incl. overpressure mechanisms
   (Swarbrick is a pore-pressure authority).
+- Book: _The Supergiant Lower Cretaceous Pre-Salt Petroleum Systems of
+  the Santos Basin, Brazil_ — AAPG Memoir 124 (GeoScienceWorld)
+  The reference volume on Santos pre-salt geology. Use for: pre-salt
+  carbonate reservoir and salt-section context for Brazil-flavored
+  lessons.
 
 ### Fluids & thermodynamics
 
@@ -87,12 +106,7 @@
 
 ## Gaps
 
-- No free, verified online course links captured yet for geomechanics
-  (Zoback's online course) or PVT — verify and add exact URLs.
-- Need a good NCS-specific public dataset/reference (NPD/Sodir FactPages)
-  for grounding examples in real fields — add next session.
-- Brazilian pre-salt resources needed (user's company has two deepwater
-  Brazil projects): ANP public data, Santos/Campos basin geology papers,
-  pre-salt carbonate petrophysics, salt drilling references (e.g.
-  OnePetro papers on Santos pre-salt wells) — find and verify next
-  session.
+- No verified free PVT/phase-behavior course or lecture series yet.
+- Pre-salt drilling-engineering papers (salt creep, casing design in
+  salt, Santos well examples) not yet collected from OnePetro — needs
+  SPE/employer access.

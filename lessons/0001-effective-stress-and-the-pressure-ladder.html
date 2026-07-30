@@ -65,8 +65,10 @@
   <p>The skeleton of rock grains carries only the part of total stress not
   carried by the pore fluid. Everything mechanical the rock does —
   <strong>compacting, strengthening, failing, fracturing</strong> — responds
-  to σ′, not σ. This single idea generates the causal chains below, which are
-  the real payload of this lesson
+  to σ′, not σ. The principle is Terzaghi's (1923, from soil mechanics),
+  generalized by Biot (1941) with the α coefficient; see Fjær et al.,
+  <em>Petroleum Related Rock Mechanics</em>, ch. 1. It generates the causal
+  chains below, which are the real payload of this lesson
   (<a href="https://petrowiki.spe.org/Stress_impact_on_rock_properties">PetroWiki:
   stress impact on rock properties</a>,
   <a href="https://petrowiki.spe.org/Rock_failure_relationships">rock failure
@@ -78,7 +80,7 @@
       <li>Rapid burial of low-permeability shale → pore fluid cannot escape as fast as load is added.</li>
       <li>The fluid carries part of the new load → p<sub>p</sub> rises above hydrostatic (<em>undercompaction / disequilibrium compaction</em> — the dominant mechanism in young basins).</li>
       <li>σ′ = σ<sub>v</sub> − p<sub>p</sub> stays anomalously <em>low</em> → compaction stalls → porosity stays anomalously <em>high</em> for that depth.</li>
-      <li>High porosity → slow sonic velocity, low density, low resistivity vs. the normal compaction trend → this departure is exactly what Eaton-type pore-pressure prediction quantifies.</li>
+      <li>High porosity → slow sonic velocity, low density, low resistivity vs. the normal compaction trend → this departure is exactly what Eaton-type pore-pressure prediction quantifies (Eaton 1975, SPE-5544; Zoback, <em>Reservoir Geomechanics</em>, ch. 2; <a href="https://petrowiki.spe.org/Category:5.1.10_Reservoir_geomechanics">PetroWiki geomechanics</a>).</li>
     </ol>
   </div>
 
@@ -86,7 +88,7 @@
     <div class="chain-title">Causal chain B — why depleted zones take losses</div>
     <ol>
       <li>Production drops p<sub>p</sub> in the reservoir.</li>
-      <li>σ′ rises, the rock compacts slightly, and poroelasticity pulls the minimum horizontal stress σ<sub>h</sub> down with it: Δσ<sub>h</sub> ≈ 0.5–0.8 · Δp<sub>p</sub> (the reservoir <em>stress path</em>).</li>
+      <li>σ′ rises, the rock compacts slightly, and poroelasticity pulls the minimum horizontal stress σ<sub>h</sub> down with it: Δσ<sub>h</sub> ≈ 0.5–0.8 · Δp<sub>p</sub> — the reservoir <em>stress path</em> (field data and theory in Zoback, <em>Reservoir Geomechanics</em>, ch. 12; Fjær et al., ch. 12).</li>
       <li>Fracture pressure ≈ f(σ<sub>h</sub>) → the frac gradient falls almost in step with depletion.</li>
       <li>Your old mud weight now sits <em>above</em> the new frac gradient → losses in infill wells through depleted sands. Same physics, reversed sign, explains why the frac gradient is <em>high</em> in overpressured zones — and why the drilling margin narrows there.</li>
     </ol>
@@ -132,37 +134,37 @@
 renderQuiz('quiz', [
   {
     q: 'What is the hydrostatic gradient of freshwater (1.00 sg), in bar/m?',
-    options: ['0.0981 bar/m', '0.1081 bar/m', '0.0891 bar/m', '0.1013 bar/m'],
-    answer: 0,
+    options: ['0.1081 bar/m', '0.0891 bar/m', '0.0981 bar/m', '0.1013 bar/m'],
+    answer: 2,
     explain: 'ρg = 1000 kg/m³ × 9.81 m/s² = 9.81 kPa/m = 0.0981 bar/m. Hence p [bar] = 0.0981 × sg × TVD [m]. (Brazilian field units: p [psi] = 0.1704 × lb/gal × TVD [m], i.e. 1.423 psi/m for freshwater.)'
   },
   {
     q: 'Overburden σv = 520 bar and pore pressure = 310 bar. Vertical effective stress σv′ (Terzaghi)?',
-    options: ['210 bar', '830 bar', '310 bar', '160 bar'],
-    answer: 0,
+    options: ['830 bar', '210 bar', '310 bar', '160 bar'],
+    answer: 1,
     explain: 'σ′ = σ − pp = 520 − 310 = 210 bar. The grain skeleton carries only what the pore fluid does not.'
   },
   {
     q: 'What bottomhole pressure does a 1.60 sg mud exert at 2500 m TVD?',
-    options: ['392 bar', '340 bar', '425 bar', '361 bar'],
-    answer: 0,
+    options: ['340 bar', '425 bar', '392 bar', '361 bar'],
+    answer: 2,
     explain: '0.0981 × 1.60 × 2500 = 392 bar. Drill this multiplication until it is reflexive — it is the workhorse of every well-control and design calculation.'
   },
   {
     q: 'A reservoir is depleted by 100 bar. Roughly how far does the minimum horizontal stress σh fall?',
-    options: ['Around 60 bar', 'Exactly 100 bar', 'Around 0 bar', 'Around 130 bar'],
-    answer: 0,
+    options: ['Exactly 100 bar', 'Around 0 bar', 'Around 130 bar', 'Around 60 bar'],
+    answer: 3,
     explain: 'The reservoir stress path gives Δσh ≈ 0.5–0.8 × Δpp, so ~50–80 bar — which is why frac gradients collapse in depleted sands and infill wells take losses.'
   },
   {
     q: 'Why does overpressured (undercompacted) shale show anomalously slow sonic velocity?',
     options: [
-      'Excess porosity preserved by trapped fluid',
       'Higher density from increased clay content',
+      'Excess porosity preserved by trapped fluid',
       'Gas invasion from the reservoir below',
       'Temperature effects on the sonic tool'
     ],
-    answer: 0,
+    answer: 1,
     explain: 'High pp → low effective stress → compaction stalls → porosity stays high for that depth → slow sonic. The departure from the normal compaction trend is the basis of Eaton-type pore pressure prediction.'
   }
 ]);

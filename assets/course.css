@@ -142,6 +142,24 @@ th, td { border: 1px solid var(--border); padding: 0.45rem 0.65rem; text-align: 
 th { background: var(--formula-bg); font-family: Georgia, serif; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 
+/* Document list (homepage / archive pages) */
+ul.doc-list { list-style: none; margin: 0 0 1rem; }
+ul.doc-list li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+}
+ul.doc-list a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+ul.doc-list a:hover { text-decoration: underline; }
+ul.doc-list .date { color: var(--muted); font-size: 0.85rem; display: block; }
+
 /* Footer nav */
 footer.lesson-footer {
   margin-top: 3rem;
