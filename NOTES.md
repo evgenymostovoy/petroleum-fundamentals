@@ -11,8 +11,11 @@ Working notes and user preferences for teaching.
 
 ## Teaching preferences (inferred from mission — confirm as we go)
 
-- Units: SI/NCS first (sg EMW, bar, MPa, m), field units (ppg, psi/ft)
-  second. Always show both — he must converse across both systems.
+- Units: SI/NCS first (sg EMW, bar, MPa, m), **Brazilian field units
+  second** (user correction, 2026-07-30): pressure in psi, density in
+  lb/gal (ppg), depth in meters — i.e. p [psi] = 0.1704 · ppg · TVD [m].
+  Do NOT use US field units (psi/ft with depth in ft) as the secondary
+  system. Always show both systems.
 - Tone: peer-to-peer technical, no hand-holding on field practice; DO
   rebuild theory from first principles even when it feels "basic".
 - Every lesson: retrieval quiz + spaced-review hooks back to earlier

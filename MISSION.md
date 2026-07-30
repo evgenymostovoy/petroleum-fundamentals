@@ -26,8 +26,9 @@ with core numbers, formulas, and causal chains at **instant recall**.
   tone, no hand-holding on field operations.
 - Instant recall is the bar → every lesson must use retrieval practice,
   spacing, and interleaving (storage strength, not fluency).
-- NCS context: SI units first (sg EMW, bar, MPa, m), field units (ppg,
-  psi/ft) always shown second — he must operate in both systems.
+- NCS context: SI units first (sg EMW, bar, MPa, m), Brazilian field units
+  (psi, lb/gal, meters — the 0.1704 system) always shown second — he must
+  operate in both systems.
 
 ## Out of scope
 

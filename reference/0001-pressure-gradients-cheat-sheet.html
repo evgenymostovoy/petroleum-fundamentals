@@ -21,8 +21,8 @@
     p [bar] = 0.0981 · ρ [sg] · TVD [m]
   </div>
   <div class="formula">
-    <span class="label">Hydrostatic pressure — field units</span>
-    p [psi] = 0.052 · ρ [ppg] · TVD [ft]
+    <span class="label">Hydrostatic pressure — Brazilian field units</span>
+    p [psi] = 0.1704 · ρ [lb/gal] · TVD [m]
   </div>
   <div class="formula">
     <span class="label">Terzaghi / Biot effective stress</span>
@@ -37,23 +37,22 @@
 
   <table>
     <tr><th>From</th><th>To</th><th class="num">Multiply by</th></tr>
-    <tr><td>sg (g/cm³)</td><td>ppg</td><td class="num">8.345</td></tr>
-    <tr><td>sg</td><td>psi/ft</td><td class="num">0.433</td></tr>
+    <tr><td>sg (g/cm³)</td><td>lb/gal (ppg)</td><td class="num">8.345</td></tr>
+    <tr><td>sg</td><td>psi/m</td><td class="num">1.423</td></tr>
     <tr><td>sg</td><td>bar/m</td><td class="num">0.0981</td></tr>
     <tr><td>bar</td><td>psi</td><td class="num">14.50</td></tr>
     <tr><td>MPa</td><td>bar</td><td class="num">10</td></tr>
-    <tr><td>m</td><td>ft</td><td class="num">3.281</td></tr>
-    <tr><td>ppg</td><td>psi/ft</td><td class="num">0.052</td></tr>
+    <tr><td>lb/gal</td><td>psi/m</td><td class="num">0.1704</td></tr>
   </table>
 
   <h2>Canonical gradients &amp; densities</h2>
 
   <table>
-    <tr><th>Quantity</th><th class="num">sg (EMW)</th><th class="num">bar/m</th><th class="num">psi/ft</th><th class="num">ppg</th></tr>
-    <tr><td>Freshwater</td><td class="num">1.00</td><td class="num">0.0981</td><td class="num">0.433</td><td class="num">8.34</td></tr>
-    <tr><td>Seawater / NCS normal p<sub>p</sub></td><td class="num">≈1.03</td><td class="num">0.101</td><td class="num">0.446</td><td class="num">8.6</td></tr>
-    <tr><td>GoM normal p<sub>p</sub> (saltier brine)</td><td class="num">≈1.07</td><td class="num">0.105</td><td class="num">0.465</td><td class="num">8.95</td></tr>
-    <tr><td>Overburden rule of thumb (deep, compacted)</td><td class="num">≈2.31</td><td class="num">0.226</td><td class="num">≈1.0</td><td class="num">19.3</td></tr>
+    <tr><th>Quantity</th><th class="num">sg (EMW)</th><th class="num">bar/m</th><th class="num">psi/m</th><th class="num">lb/gal</th></tr>
+    <tr><td>Freshwater</td><td class="num">1.00</td><td class="num">0.0981</td><td class="num">1.42</td><td class="num">8.34</td></tr>
+    <tr><td>Seawater / NCS normal p<sub>p</sub></td><td class="num">≈1.03</td><td class="num">0.101</td><td class="num">1.47</td><td class="num">8.6</td></tr>
+    <tr><td>GoM normal p<sub>p</sub> (saltier brine)</td><td class="num">≈1.07</td><td class="num">0.105</td><td class="num">1.53</td><td class="num">8.95</td></tr>
+    <tr><td>Overburden rule of thumb (deep, compacted)</td><td class="num">≈2.31</td><td class="num">0.226</td><td class="num">3.28</td><td class="num">19.3</td></tr>
     <tr><td>Typical sediment bulk density range</td><td class="num" colspan="4">1.8 – 2.6 g/cm³ (increases with compaction/depth)</td></tr>
   </table>
 
