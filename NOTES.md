@@ -67,25 +67,17 @@ Lesson 0002 quiz round (LR-0002).
 
 ## Session log
 
-- 2026-07-30 (4) · Alignment audit applied: RESOURCES.md retitled and
-  now serves the full mission — economics/decision-analysis subsection
-  added (Newendorp & Schuyler verified; Mian pending link), commercial
-  proving grounds added to Wisdom (workplace economists, SPEE), field
-  data moved next to cross-discipline reference, economics gap surfaced.
-  Glossary promotion policy deduplicated (NOTES.md canonical).
-- 2026-07-30 (3) · Skill-compliance audit applied: GLOSSARY.md created
-  (practice-known terms seeded); per-claim citations added to both
-  lessons; quiz option word counts fixed and answer indices varied in
-  source; index.html moved onto assets/course.css (doc-list styles now a
-  shared component); RESOURCES.md gained verified Zoback Stanford course,
-  Sodir FactPages, ANP data portal, AAPG Memoir 124.
-- 2026-07-30 (2) · Mission expanded after brainstorm (LR-0003): end-state
-  is connecting technical + commercial + strategic dots; upstream
-  economics added at working quantitative level. MISSION.md and
-  curriculum thread rewritten; NOTES.md rewritten clean same day.
-- 2026-07-30 · Workspace initialized; mission captured. Lesson 0001
-  (effective stress & the pressure ladder) and Reference 0001 (pressure
-  gradients cheat sheet) created. Units preference and dual-basin context
-  established. Lesson 0001 quiz 5/5 same-session (LR-0002). Lesson 0002
-  (rock failure & collapse pressure) created with 2 interleaved L1
-  questions — spaced re-test of L1 pending next session.
+- 2026-07-30 · Workspace initialized: mission captured then expanded
+  after brainstorm (LR-0003) to technical + commercial + strategic;
+  units (Brazilian secondary) and dual-basin context set. Lessons
+  0001–0002 and Reference 0001 created; L1 quiz 5/5 same-session
+  (LR-0002), spaced re-test of L1 pending via L2's interleaved
+  questions. GLOSSARY.md seeded. Three audits applied: skill compliance
+  (citations, quiz hygiene, shared styles, verified resources incl.
+  Zoback course/Sodir/ANP), mission-alignment (RESOURCES retitled +
+  economics resources & commercial proving grounds added), and a
+  functional pass (browser-tested pages and quizzes, all numbers
+  recomputed OK; fixed a glossary-term violation in L1 and L2's stale
+  "next up" pointer). Next session: L2 quiz result → Lesson 3 (mud
+  weight window assembly: LOT/FIT, casing-seat logic), then first
+  commercial lesson; first glossary promotions on confirmed recall.
