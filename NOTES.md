@@ -16,6 +16,13 @@ Working notes and user preferences for teaching.
   lb/gal (ppg), depth in meters — i.e. p [psi] = 0.1704 · ppg · TVD [m].
   Do NOT use US field units (psi/ft with depth in ft) as the secondary
   system. Always show both systems.
+- Context (2026-07-30): company has NCS projects + two deepwater Brazil
+  projects. Salt examples with Brazilian pre-salt where natural: carbonate
+  reservoirs (microbialites/coquinas), salt tectonics & salt drilling,
+  deepwater riser margin / narrow windows, Santos–Campos basin settings.
+  Planned dedicated lessons later in the sequence: salt mechanics (creep,
+  casing loads), carbonate petrophysics (vs. Archie-in-clastics),
+  deepwater well control margins.
 - Tone: peer-to-peer technical, no hand-holding on field practice; DO
   rebuild theory from first principles even when it feels "basic".
 - Every lesson: retrieval quiz + spaced-review hooks back to earlier

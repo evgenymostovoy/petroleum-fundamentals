@@ -91,3 +91,8 @@
   (Zoback's online course) or PVT — verify and add exact URLs.
 - Need a good NCS-specific public dataset/reference (NPD/Sodir FactPages)
   for grounding examples in real fields — add next session.
+- Brazilian pre-salt resources needed (user's company has two deepwater
+  Brazil projects): ANP public data, Santos/Campos basin geology papers,
+  pre-salt carbonate petrophysics, salt drilling references (e.g.
+  OnePetro papers on Santos pre-salt wells) — find and verify next
+  session.
